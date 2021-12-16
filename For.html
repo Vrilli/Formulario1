@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./For.css">
+    <title>Formulario de Encuesta</title>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <h1 id="title" class="text-center">Formulario de Encuesta</h1>
+        <h3 id="description" class="description text-center">
+            Gracias por tomarse el tiempo para llenar esta encuesta
+        </h3>
+    </header>
+
+    <div class="Container">
+
+        <div class="mb-3 row">
+            <label for="inputName" class="col-sm-2 col-form-label" id="Nombre"><strong>Nombre</strong></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="inputEmail" class="col-sm-2 col-form-label" id="Correo"><strong>Correo</strong></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label id="number-label" for="number" ><strong>Edad</strong><span class="clue"><strong>(Opcional)</strong></span></label> <br>
+
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+        </div>
+
+        <div class="form-group">
+            <p>¿Que Opción describe mejor su condición actual?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Seleccionar</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="professional">Profesional</option>
+                <option value="Trabajo">Trabaja tiempo completo</option>
+                <option value="trabajom">Trabaja medio tiempo</option>
+                <option value="Prefiero no decir">Prefiero no decirlo</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <br> 
+
+
+        <div class="form-check">
+            <p>¿Te gusta programar?</p>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Definitivamente
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Quizas
+            </label>
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                No estoy seguro
+            </label>
+        </div> <br>
+
+
+        <div class="form-group">
+            <p>¿Que es lo que más te gusta de la Programación?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Seleccionar</option>
+                <option value="Proyectos">Los proyectos</option>
+                <option value="Codificar">Codificar</option>
+                <option value="Imaginacion">Dejar volar la Imaginación</option>
+                <option value="Trabajoflexible">Trabajo flexible</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div> <br>
+
+
+        <div class="form-group">
+            <p>
+                ¿Te gustaria reforzar tus conocimientos en Porgramación atraves de que plataforma?
+
+                <span class="clue">(Marque todo lo que corresponda)</span>
+            </p>
+
+            <label><input name="prefer" value="Academia Geek" type="checkbox" class="input-checkbox" />Academia
+                Geek</label> <br>
+            <label><input name="prefer" value="Platzi" type="checkbox" class="input-checkbox" />Platzi</label><br>
+            <label><input name="prefer" value="Freecampocode" type="checkbox"
+                    class="input-checkbox" />FreeCampoCode</label> <br>
+            <label><input name="prefer" value="Youtube" type="checkbox" class="input-checkbox" />Youtube</label><br>
+            <label><input name="prefer" value="Otra" type="checkbox" class="input-checkbox" />Otra</label><br>
+
+        </div> <br>
+
+
+        <div class="form-floating">
+            <p>¿Algún comentario o sugerencia?</p>
+            <textarea class="form-control" placeholder="Comentarios" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2"></label>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit" id="btn-Enviar">Enviar</button>
+        </div> <br> <br>
+    </div>
+    <script src="./For.js"></script>
+
+</body>
+
+</html>
